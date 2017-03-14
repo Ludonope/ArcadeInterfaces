@@ -1,6 +1,7 @@
 #ifndef ILAYER_HPP_
 #define ILAYER_HPP_
 
+#include <vector>
 #include "ITile.hpp"
 
 class ILayer
