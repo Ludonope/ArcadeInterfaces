@@ -10,6 +10,7 @@
 #include "IMap.hpp"
 #include "IMenu.hpp"
 #include "ILevel.hpp"
+#include "IGUI.hpp"
 
 class IGame
 {
