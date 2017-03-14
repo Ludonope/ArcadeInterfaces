@@ -1,6 +1,8 @@
 #ifndef ILAYER_HPP_
 #define ILAYER_HPP_
 
+#include "ITile.hpp"
+
 class ILayer
 {
 public:
