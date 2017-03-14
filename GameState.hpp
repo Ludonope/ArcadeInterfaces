@@ -8,7 +8,8 @@ enum GameState
   PAUSED,
   GAME_MENU,
   MENU,
+  QUIT,
   NB_GAME_STATE
-}
+};
 
 #endif // !GAMESTATE_HPP_
