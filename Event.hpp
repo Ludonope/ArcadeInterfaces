@@ -122,7 +122,7 @@ enum KeyboardKey
   KB_EQUAL,
   KB_DELETE,
   NB_KEYBOARD_KEY
-}
+};
 
 enum MouseKey
 {
