@@ -5,6 +5,6 @@ union Color
 {
   uint32_t full;
   uint8_t  argb[4];
-}
+};
 
 #endif // !COLOR_HPP_
