@@ -3,20 +3,20 @@
 
 enum EventType
 {
-  T_NONE = -1,
-  T_KEYBOARD,
-  T_MOUSE,
-  T_BUTTON,
-  T_JOYSTICK,
+  ET_NONE = -1,
+  ET_KEYBOARD,
+  ET_MOUSE,
+  ET_BUTTON,
+  ET_JOYSTICK,
   NB_EVENT_TYPE
 };
 
 enum ActionType
 {
-  T_NONE = -1,
-  T_PRESSED,
-  T_RELEASED,
-  T_MOVED,
+  AT_NONE = -1,
+  AT_PRESSED,
+  AT_RELEASED,
+  AT_MOVED,
   NB_ACTION_TYPE
 };
 
