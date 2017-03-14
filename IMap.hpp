@@ -3,15 +3,18 @@
 
 #include "ILayer.hpp"
 
-class IMap
+namespace arcade
 {
-public:
-  virtual ~IMap() = 0;
+  class IMap
+  {
+  public:
+    virtual ~IMap() = 0;
 
-  virtual ILayer &operator[](size_t n) = 0;
-  virtual size_t getLayerNb() const = 0;
-  virtual size_t getWidth() const = 0;
-  virtual size_t getHeight() const = 0;
-};
+    virtual ILayer &operator[](size_t n) = 0;
+    virtual size_t getLayerNb() const = 0;
+    virtual size_t getWidth() const = 0;
+    virtual size_t getHeight() const = 0;
+  };
+}
 
 #endif // !IMAP_HPP_

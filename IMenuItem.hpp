@@ -1,11 +1,14 @@
 #ifndef IMENUITEM_HPP_
 #define IMENUITEM_HPP_
 
-class IMenuItem
+namespace arcade
 {
-public:
-  virtual ~IMenuItem(){};
-  // NOT DEFINED YET
-};
+  class IMenuItem
+  {
+  public:
+    virtual ~IMenuItem(){};
+    // NOT DEFINED YET
+  };
+}
 
 #endif // !IMENUITEM_HPP_
