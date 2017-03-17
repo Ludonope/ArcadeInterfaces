@@ -1,24 +1,26 @@
 #ifndef EVENT_HPP_
 #define EVENT_HPP_
 
-enum EventType
+namespace arcade
 {
-  T_NONE = -1,
-  T_KEYBOARD,
-  T_MOUSE,
-  T_BUTTON,
-  T_JOYSTICK,
-  NB_EVENT_TYPE
-};
+  enum EventType
+  {
+    ET_NONE = -1,
+    ET_KEYBOARD,
+    ET_MOUSE,
+    ET_BUTTON,
+    ET_JOYSTICK,
+    NB_EVENT_TYPE
+  };
 
-enum ActionType
-{
-  T_NONE = -1,
-  T_PRESSED,
-  T_RELEASED,
-  T_MOVED,
-  NB_ACTION_TYPE
-};
+  enum ActionType
+  {
+    AT_NONE = -1,
+    AT_PRESSED,
+    AT_RELEASED,
+    AT_MOVED,
+    NB_ACTION_TYPE
+  };
 
 enum KeyboardKey
 {
@@ -125,44 +127,45 @@ enum KeyboardKey
   NB_KEYBOARD_KEY
 };
 
-enum MouseKey
-{
-  M_NONE = -1,
-  M_LEFT_CLICK,
-  M_RIGHT_CLICK,
-  M_MIDDLE_CLICK,
-  M_SCROLL_UP,
-  M_SCROLL_DOWN,
-  M_BT0,
-  M_BT1,
-  M_BT2,
-  M_BT3,
-  M_BT4,
-  M_BT5,
-  M_BT6,
-  M_BT7,
-  M_BT8,
-  M_BT9,
-  NB_MOUSE_KEY
-};
+  enum MouseKey
+  {
+    M_NONE = -1,
+    M_LEFT_CLICK,
+    M_RIGHT_CLICK,
+    M_MIDDLE_CLICK,
+    M_SCROLL_UP,
+    M_SCROLL_DOWN,
+    M_BT0,
+    M_BT1,
+    M_BT2,
+    M_BT3,
+    M_BT4,
+    M_BT5,
+    M_BT6,
+    M_BT7,
+    M_BT8,
+    M_BT9,
+    NB_MOUSE_KEY
+  };
 
-enum ControllerKey
-{
-  C_NONE = -1,
-  // TODO: map the controller keys
-  NB_CONTROLLER_KEY
-};
+  enum ControllerKey
+  {
+    C_NONE = -1,
+    // TODO: map the controller keys
+    NB_CONTROLLER_KEY
+  };
 
-//
-// Structure used to get the user input event
-//
-struct Event
-{
-  EventType     type;
-  ActionType    action;
-  KeyboardKey   kb_key;
-  MouseKey      m_key;
-  ControllerKey c_key;
-};
+  //
+  // Structure used to get the user input event
+  //
+  struct Event
+  {
+    EventType     type;
+    ActionType    action;
+    KeyboardKey   kb_key;
+    MouseKey      m_key;
+    ControllerKey c_key;
+  };
+}
 
 #endif // !EVENT_HPP_
