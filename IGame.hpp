@@ -1,3 +1,5 @@
+// v1.0.1
+
 #ifndef IGAME_HPP_
 #define IGAME_HPP_
 
@@ -31,7 +33,7 @@ namespace arcade
 
     // Sound
     virtual std::vector<std::string> getSoundsToLoad() const = 0;
-    virtual std::vector<int>         getSoundToPlay() const = 0;
+    virtual std::vector<int>         getSoundSToPlay() const = 0;
 
     // Map
     virtual IMap const &getCurrentMap() const = 0;

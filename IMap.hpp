@@ -1,6 +1,9 @@
+// v1.0.1
+
 #ifndef IMAP_HPP_
 #define IMAP_HPP_
 
+#include <cstddef>
 #include "ILayer.hpp"
 
 namespace arcade
