@@ -38,9 +38,6 @@ namespace arcade
     // Map
     virtual IMap const &getCurrentMap() const = 0;
 
-    // Menu
-    virtual IMenu const &getMenu() const = 0;
-
     // GUI
     virtual IGUI const &getGUI() const = 0;
   };
