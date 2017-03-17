@@ -1,6 +1,7 @@
 #ifndef IMENU_HPP_
 #define IMENU_HPP_
 
+#include <cstddef>
 #include "IMenuItem.hpp"
 
 namespace arcade

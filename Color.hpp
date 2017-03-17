@@ -1,6 +1,8 @@
 #ifndef COLOR_HPP_
 #define COLOR_HPP_
 
+#include <cstdint>
+
 namespace arcade
 {
   union Color

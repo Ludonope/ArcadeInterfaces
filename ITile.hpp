@@ -1,8 +1,10 @@
 #ifndef ITILE_HPP_
 #define ITILE_HPP_
 
+#include <cstddef>
 #include "Protocol.hpp"
 #include "Color.hpp"
+#include "GameState.hpp"
 
 namespace arcade
 {

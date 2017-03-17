@@ -1,11 +1,11 @@
 // v1.0.1
 
 #ifndef ILAYER_HPP_
-#define ILAYER_HPP_
+# define ILAYER_HPP_
 
-#include <vector>
-#include <cstddef>
-#include "ITile.hpp"
+# include <vector>
+# include <cstddef>
+# include "ITile.hpp"
 
 namespace arcade
 {
