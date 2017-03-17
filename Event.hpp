@@ -3,6 +3,12 @@
 
 namespace arcade
 {
+  struct MousePos
+  {
+    double	x;
+    double	y;
+  };
+
   enum EventType
   {
     ET_NONE = -1,
@@ -167,6 +173,8 @@ enum KeyboardKey
       MouseKey      m_key;
       ControllerKey c_key;
     };
+    MousePos	pos_rel;
+    MousePos	pos_abs;
   };
 }
 
