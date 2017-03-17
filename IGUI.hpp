@@ -7,6 +7,7 @@ namespace arcade
   {
   public:
     virtual ~IGUI() = 0;
+    virtual void createComponent(std::string const& name, TypeComponent) = 0;
     // NOT DEFINED YET
   };
 }
