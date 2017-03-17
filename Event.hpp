@@ -65,7 +65,8 @@ enum KeyboardKey
   KB_ARROW_DOWN,
   KB_SPACE,
   KB_ENTER,
-  KB_BACKSPACE KB_LCTRL,
+  KB_BACKSPACE,
+  KB_LCTRL,
   KB_RCTRL,
   KB_LALT,
   KB_RALT,
@@ -122,7 +123,7 @@ enum KeyboardKey
   KB_EQUAL,
   KB_DELETE,
   NB_KEYBOARD_KEY
-}
+};
 
 enum MouseKey
 {

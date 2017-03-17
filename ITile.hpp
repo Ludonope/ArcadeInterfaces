@@ -9,9 +9,11 @@ class ITile
 public:
   virtual ~ITile(){};
 
-  virtual TileType getType() const = 0;
+  virtual arcade::TileType getType() const = 0;
   virtual void setType(TileType type) = 0;
 
+  virtual TileTypeEvolution getTypeEv() const = 0;
+  virtual void setTypeEv(TileTypeEvolution type) = 0;
   virtual union Color getColor() const = 0;
   virtual void setColor(union Color color) = 0;
 
