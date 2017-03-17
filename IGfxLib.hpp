@@ -24,16 +24,20 @@ namespace arcade
     virtual void playSound(int soundId) = 0;
 
     // Map
-    virtual void setMap(IMap const &map) = 0;
+    virtual void updateMap(IMap const &map) = 0;
 
     // Menu
-    virtual void setMenu(IMenu const &menu) = 0;
+    virtual void updateMenu(IMenu const &menu) = 0;
 
     // GUI
-    virtual void setGUI(IGUI const &gui) = 0;
+    virtual void updateGUI(IGUI const &gui) = 0;
 
     // Display
     virtual void display() = 0;
+
+    // Clear
+    virtual void clear() = 0;
+
   };
 }
 
