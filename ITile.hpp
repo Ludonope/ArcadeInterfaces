@@ -3,6 +3,7 @@
 
 #include "Protocol.hpp"
 #include "Color.hpp"
+#include "GameState.hpp"
 
 namespace arcade
 {
