@@ -1,4 +1,4 @@
-// v1.0.1
+// v1.0.2
 
 #ifndef IMAP_HPP_
 #define IMAP_HPP_
@@ -14,6 +14,7 @@ namespace arcade
     virtual ~IMap() = 0;
 
     virtual ILayer &operator[](size_t n) = 0;
+    virtual const ILayer &operator[](size_t n) const = 0;
     virtual size_t getLayerNb() const = 0;
     virtual size_t getWidth() const = 0;
     virtual size_t getHeight() const = 0;
