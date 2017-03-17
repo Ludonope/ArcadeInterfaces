@@ -1,5 +1,5 @@
 // Please, if you change the Interface, update the version
-// v1.0.1
+// v1.0.2
 
 #ifndef IGFXLIB_HPP_
 #define IGFXLIB_HPP_
@@ -33,9 +33,6 @@ namespace arcade
 
     // Map
     virtual void updateMap(IMap const &map) = 0;
-
-    // Menu
-    virtual void updateMenu(IMenu const &menu) = 0;
 
     // GUI
     virtual void updateGUI(IGUI const &gui) = 0;
