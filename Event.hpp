@@ -162,9 +162,11 @@ enum KeyboardKey
   {
     EventType     type;
     ActionType    action;
-    KeyboardKey   kb_key;
-    MouseKey      m_key;
-    ControllerKey c_key;
+    union {
+      KeyboardKey   kb_key;
+      MouseKey      m_key;
+      ControllerKey c_key;
+    };
   };
 }
 
