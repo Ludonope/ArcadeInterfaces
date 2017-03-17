@@ -129,7 +129,7 @@ enum KeyboardKey
   KB_UNDERSCORE,
   KB_MINUS,
   KB_PLUS,
-  KB_EQUAL,
+  KB_EQUALS,
   KB_DELETE,
   NB_KEYBOARD_KEY
 };
