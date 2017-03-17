@@ -10,7 +10,6 @@ namespace arcade
   {
   public:
     virtual ~ILayer() = 0;
-
     virtual std::vector<ITile *> &operator[](int n);
     virtual size_t ǵetWidth() const = 0;
     virtual size_t ǵetHeight() const = 0;
