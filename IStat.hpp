@@ -1,6 +1,8 @@
 #ifndef ISTAT_HPP_
 #define ISTAT_HPP_
 
+#include <string>
+
 namespace arcade
 {
   class IStat
