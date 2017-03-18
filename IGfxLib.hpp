@@ -8,7 +8,6 @@
 #include <string>
 #include "Event.hpp"
 #include "IMap.hpp"
-#include "IMenu.hpp"
 #include "IGUI.hpp"
 
 namespace arcade
