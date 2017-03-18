@@ -1,6 +1,9 @@
 #ifndef IGUI_HPP_
 #define IGUI_HPP_
 
+#include <string>
+#include "GameState.hpp"
+
 namespace arcade
 {
   class IGUI
