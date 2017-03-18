@@ -1,6 +1,6 @@
 // v1.0.1
 
-#ifndef ILAYER_HPP_ls
+#ifndef ILAYER_HPP_
 # define ILAYER_HPP_
 
 # include <vector>
