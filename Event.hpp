@@ -17,6 +17,7 @@ namespace arcade
     ET_BUTTON,
     ET_JOYSTICK,
     ET_QUIT,
+    ET_WINDOW,
     NB_EVENT_TYPE
   };
 
