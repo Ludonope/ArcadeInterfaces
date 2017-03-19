@@ -17,7 +17,6 @@ namespace arcade
     ET_BUTTON,
     ET_JOYSTICK,
     ET_QUIT,
-    ET_WINDOW,
     NB_EVENT_TYPE
   };
 
@@ -29,7 +28,6 @@ namespace arcade
     AT_MOVED,
     AT_CONNECTED,
     AT_DISCONNECTED,
-    AT_RESIZED,
     NB_ACTION_TYPE
   };
 
