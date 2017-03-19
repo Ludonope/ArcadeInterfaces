@@ -1,5 +1,4 @@
-// Please, if you change the Interface, update the version
-// v1.0.2
+// v1.0.3
 
 #ifndef IGFXLIB_HPP_
 #define IGFXLIB_HPP_
@@ -41,7 +40,6 @@ namespace arcade
 
     // Clear
     virtual void clear() = 0;
-
   };
 }
 
