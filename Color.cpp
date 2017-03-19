@@ -17,6 +17,11 @@ namespace arcade
 
   Color::Color()
   {
-	  full = color::Black.full;
+	full = color::Black.full;
+  }
+
+  Color::Color(Color &c)
+  {
+    full = c.full;
   }
 }
