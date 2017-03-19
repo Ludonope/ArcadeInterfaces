@@ -26,6 +26,8 @@ namespace arcade
     AT_PRESSED,
     AT_RELEASED,
     AT_MOVED,
+    AT_CONNECTED,
+    AT_DISCONNECTED,
     NB_ACTION_TYPE
   };
 
