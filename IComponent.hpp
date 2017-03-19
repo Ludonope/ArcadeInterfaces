@@ -5,12 +5,15 @@
 #ifndef CPP_ARCADE_ICOMPONENT_HPP
 #define CPP_ARCADE_ICOMPONENT_HPP
 
+#include <string>
+#include "GameState.hpp"
+
 namespace arcade
 {
     class IComponent
     {
     public:
-        virtual ~IComponent() = 0;
+        virtual ~IComponent(){};
         virtual const std::string &getValue() const = 0;
         virtual void setValue(const std::string &value) = 0;
         virtual const std::string &getFont() const = 0;
