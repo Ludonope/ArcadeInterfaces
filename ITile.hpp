@@ -1,3 +1,5 @@
+// v1.0.0
+
 #ifndef ITILE_HPP_
 #define ITILE_HPP_
 
@@ -13,12 +15,12 @@ namespace arcade
   public:
     virtual ~ITile(){};
 
-  virtual arcade::TileType getType() const = 0;
-  virtual void setType(TileType type) = 0;
-  virtual TileTypeEvolution getTypeEv() const = 0;
-  virtual void setTypeEv(TileTypeEvolution type) = 0;
-  virtual union Color getColor() const = 0;
-  virtual void setColor(union Color color) = 0;
+    virtual TileType getType() const = 0;
+    virtual void setType(TileType type) = 0;
+    virtual TileTypeEvolution getTypeEv() const = 0;
+    virtual void setTypeEv(TileTypeEvolution type) = 0;
+    virtual union Color getColor() const = 0;
+    virtual void setColor(union Color color) = 0;
 
     virtual size_t getSpriteId() const = 0;
     virtual size_t getSpritePos() const = 0;
