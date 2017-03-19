@@ -28,7 +28,7 @@ namespace		arcade
   enum class		TileType : uint16_t
     {
       EMPTY		= 0,		// TILE WHERE THE CHARACTER CAN GO
-      BLOCK		= 1   ,		// TILE WHERE THE CHARACTER CANNOT GO
+      BLOCK		= 1,		// TILE WHERE THE CHARACTER CANNOT GO
       OBSTACLE		= 2,		// FOR CENTIPEDE
       EVIL_DUDE		= 3,		// EVIL DUDE
       EVIL_SHOOT	= 4,		// EVIL SHOOT
