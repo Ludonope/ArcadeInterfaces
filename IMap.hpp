@@ -1,4 +1,4 @@
-// v1.0.2
+// v1.0.3
 
 #ifndef IMAP_HPP_
 #define IMAP_HPP_
@@ -11,7 +11,7 @@ namespace arcade
   class IMap
   {
   public:
-    virtual ~IMap() = 0;
+    virtual ~IMap(){};
 
     virtual ILayer &operator[](size_t n) = 0;
     virtual const ILayer &operator[](size_t n) const = 0;

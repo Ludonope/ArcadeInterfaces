@@ -1,4 +1,4 @@
-// v1.0.1
+// v1.0.2
 
 #ifndef ILAYER_HPP_
 # define ILAYER_HPP_
@@ -12,7 +12,7 @@ namespace arcade
   class ILayer
   {
   public:
-    virtual ~ILayer() = 0;
+    virtual ~ILayer(){};
     virtual std::vector<ITile *> &operator[](int n) = 0;
     virtual const std::vector<ITile *> &operator[](int n) const = 0;
     virtual size_t getWidth() const = 0;
