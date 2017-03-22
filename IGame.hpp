@@ -24,18 +24,18 @@ namespace arcade
     virtual GameState getGameState() const = 0;
 
     // Events
-    virtual void notifyEvent(std::vector<Event> const &events) = 0;
+    virtual void notifyEvent(std::vector<Event> &&events) = 0;
 
     // Network
-    virtual void notifyNetwork(std::vector<NetworkPacket> const &events) = 0;
-    virtual std::vector<NetworkPacket> getNetworkToSend() const = 0;
+    virtual void notifyNetwork(std::vector<NetworkPacket> &&events) = 0;
+    virtual std::vector<NetworkPacket> &&getNetworkToSend() = 0;
 
     // Process
     virtual void process() = 0;
 
     // Sound
     virtual std::vector<std::string> getSoundsToLoad() const = 0;
-    virtual std::vector<int>         getSoundsToPlay() = 0;
+    virtual std::vector<int>       &&getSoundsToPlay() = 0;
 
     // Map
     virtual IMap const &getCurrentMap() const = 0;

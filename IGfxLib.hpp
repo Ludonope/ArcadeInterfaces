@@ -24,11 +24,6 @@ namespace arcade
     virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
     virtual void playSound(int soundId) = 0;
 
-    // Window
-    virtual void setSize(size_t height, size_t width) = 0;
-    virtual void setPosition(size_t y, size_t x) = 0;
-    virtual void initializeWindow() = 0;
-
     // Map
     virtual void updateMap(IMap const &map) = 0;
 
