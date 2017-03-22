@@ -25,10 +25,6 @@ namespace arcade
 #endif
 	{}
 
-	Color::Color() :
-		full(Color::Black.full)
-	{}
-
 	Color::Color(Color const &c) :
 		full(c.full)
 	{}
