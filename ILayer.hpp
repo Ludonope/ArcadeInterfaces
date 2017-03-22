@@ -13,7 +13,7 @@ namespace arcade
 	///
 	/// \class ILayer
 	/// \brief Interface for a map tile layer
-	
+
   class ILayer
   {
   public:
