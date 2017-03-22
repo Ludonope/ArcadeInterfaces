@@ -1,0 +1,63 @@
+\hypertarget{classarcade_1_1ITile}{}\section{arcade\+:\+:I\+Tile Class Reference}
+\label{classarcade_1_1ITile}\index{arcade\+::\+I\+Tile@{arcade\+::\+I\+Tile}}
+
+
+Interface representing a tile.  
+
+
+
+
+{\ttfamily \#include $<$I\+Tile.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a45fb2120945fbddafb4b963d969a5b80}\label{classarcade_1_1ITile_a45fb2120945fbddafb4b963d969a5b80}} 
+virtual \hyperlink{classarcade_1_1ITile_a45fb2120945fbddafb4b963d969a5b80}{$\sim$\+I\+Tile} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor of the interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a33b93e772d47a76ccec2e4ace26f5d19}\label{classarcade_1_1ITile_a33b93e772d47a76ccec2e4ace26f5d19}} 
+virtual Tile\+Type \hyperlink{classarcade_1_1ITile_a33b93e772d47a76ccec2e4ace26f5d19}{get\+Type} () const =0
+\begin{DoxyCompactList}\small\item\em Get the type of the tile (mostly used for moulinette) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_abb62070eedbeb35e52c1dd8be5321bd4}\label{classarcade_1_1ITile_abb62070eedbeb35e52c1dd8be5321bd4}} 
+virtual void {\bfseries set\+Type} (Tile\+Type type)=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_acbd70cc31a588583c82af105ab7ac575}\label{classarcade_1_1ITile_acbd70cc31a588583c82af105ab7ac575}} 
+virtual Tile\+Type\+Evolution \hyperlink{classarcade_1_1ITile_acbd70cc31a588583c82af105ab7ac575}{get\+Type\+Ev} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Type\+Ev of the tile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a5f4a3cbd78f7eb6cb87f1c4df10965f1}\label{classarcade_1_1ITile_a5f4a3cbd78f7eb6cb87f1c4df10965f1}} 
+virtual void {\bfseries set\+Type\+Ev} (Tile\+Type\+Evolution type)=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_adb20cb553bc2ce17dc23125eb70b8329}\label{classarcade_1_1ITile_adb20cb553bc2ce17dc23125eb70b8329}} 
+virtual \hyperlink{unionarcade_1_1Color}{Color} \hyperlink{classarcade_1_1ITile_adb20cb553bc2ce17dc23125eb70b8329}{get\+Color} () const =0
+\begin{DoxyCompactList}\small\item\em Get the color of the tile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a88b203de19a7e1737eca40edf0987fc9}\label{classarcade_1_1ITile_a88b203de19a7e1737eca40edf0987fc9}} 
+virtual void {\bfseries set\+Color} (union \hyperlink{unionarcade_1_1Color}{Color} color)=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a4c09e2ac12d75fe12e3d4d1ca4e08150}\label{classarcade_1_1ITile_a4c09e2ac12d75fe12e3d4d1ca4e08150}} 
+virtual size\+\_\+t \hyperlink{classarcade_1_1ITile_a4c09e2ac12d75fe12e3d4d1ca4e08150}{get\+Sprite\+Id} () const =0
+\begin{DoxyCompactList}\small\item\em Get the sprite ID (0 if none) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a3e5cec4407ef6afb7e10d82fb1c93f5e}\label{classarcade_1_1ITile_a3e5cec4407ef6afb7e10d82fb1c93f5e}} 
+virtual size\+\_\+t \hyperlink{classarcade_1_1ITile_a3e5cec4407ef6afb7e10d82fb1c93f5e}{get\+Sprite\+Pos} () const =0
+\begin{DoxyCompactList}\small\item\em Get the sprite position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_afbcf7ba28e2eb8c3430c69f4fd13f0cd}\label{classarcade_1_1ITile_afbcf7ba28e2eb8c3430c69f4fd13f0cd}} 
+virtual void {\bfseries next\+Sprite} ()=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_aa495d321c0cc8042cee126be74b34c00}\label{classarcade_1_1ITile_aa495d321c0cc8042cee126be74b34c00}} 
+virtual void {\bfseries prev\+Sprite} ()=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a215da065ed06206c4d7147322c450490}\label{classarcade_1_1ITile_a215da065ed06206c4d7147322c450490}} 
+virtual void {\bfseries set\+Sprite\+Pos} (size\+\_\+t pos)=0
+\item 
+\mbox{\Hypertarget{classarcade_1_1ITile_a2269b5042ed7734c1b21f388c9052262}\label{classarcade_1_1ITile_a2269b5042ed7734c1b21f388c9052262}} 
+virtual void {\bfseries set\+Sprite} (size\+\_\+t id)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface representing a tile. 
+
+A tile is a \char`\"{}block\char`\"{} of the map. It can be a wall, a empty block, a player, etc. It can be described with a type, a color and/or a sprite. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Tile.\+hpp\end{DoxyCompactItemize}
