@@ -14,17 +14,17 @@ namespace arcade
     {
     public:
         virtual ~IComponent(){};
-        virtual const std::string &getValue() const = 0;
-        virtual void setValue(const std::string &value) = 0;
-        virtual const std::string &getFont() const = 0;
-        virtual arcade::TypeComponent getType() const = 0;
-        virtual void setFont(const std::string &font) = 0;
-        virtual const std::string &getSprites() const = 0;
-        virtual void setSprites(const std::string &sprites) = 0;
-        virtual const std::pair<int, int> &getPos() const = 0;
-        virtual void setPos(const std::pair<int, int> &pos) = 0;
-        virtual size_t getScale() const = 0;
-        virtual void setScale(size_t scale) = 0;
+
+		// X and Y between 0.0 and 1.0 (percentage)
+		virtual double getX() const = 0;
+		virtual double getY() const = 0;
+
+		virtual double getWidth() const = 0;
+		virtual double getHeight() const = 0;
+
+		virtual std::size_t getBackgroundId() const = 0;
+		virtual Color getBackgroundColor() const = 0;
+		virtual std::string const &getText() const = 0;
     };
 }
 
