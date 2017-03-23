@@ -1,0 +1,46 @@
+\hypertarget{structarcade_1_1Event}{}\section{arcade\+:\+:Event Struct Reference}
+\label{structarcade_1_1Event}\index{arcade\+::\+Event@{arcade\+::\+Event}}
+
+
+Description of an event.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+hpp$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structarcade_1_1Event_a6e626bbe20fac99017e390ea0239b9a6}\label{structarcade_1_1Event_a6e626bbe20fac99017e390ea0239b9a6}} 
+Event\+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{structarcade_1_1Event_a4c0d22bb440a9185fe94b9a66759823c}\label{structarcade_1_1Event_a4c0d22bb440a9185fe94b9a66759823c}} 
+Action\+Type \hyperlink{structarcade_1_1Event_a4c0d22bb440a9185fe94b9a66759823c}{action}
+\begin{DoxyCompactList}\small\item\em Type of the event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structarcade_1_1Event_af864997eac4cf0e7682faf13930fdcda}\label{structarcade_1_1Event_af864997eac4cf0e7682faf13930fdcda}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>KeyboardKey {\bfseries kb\_key}\\
+\>MouseKey \hyperlink{structarcade_1_1Event_a52ed03f8b18613ade5ce903d36762f32}{m\_key}\\
+\>\>{\em Keyboard key. }\\
+\>ControllerKey \hyperlink{structarcade_1_1Event_a9d837c85701594ddda4d04dc5b1d8a39}{c\_key}\\
+\>\>{\em Mouse key. }\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structarcade_1_1Event_aa2b15c031d585e6ea86952bb579ca8ef}\label{structarcade_1_1Event_aa2b15c031d585e6ea86952bb579ca8ef}} 
+\hyperlink{structarcade_1_1MousePos}{Mouse\+Pos} {\bfseries pos\+\_\+rel}
+\item 
+\mbox{\Hypertarget{structarcade_1_1Event_a6fd21ebc551b688a77061cd44b01d425}\label{structarcade_1_1Event_a6fd21ebc551b688a77061cd44b01d425}} 
+\hyperlink{structarcade_1_1MousePos}{Mouse\+Pos} \hyperlink{structarcade_1_1Event_a6fd21ebc551b688a77061cd44b01d425}{pos\+\_\+abs}
+\begin{DoxyCompactList}\small\item\em Relative position (since last event) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description of an event. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Event.\+hpp\end{DoxyCompactItemize}
