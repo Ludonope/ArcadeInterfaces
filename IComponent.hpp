@@ -7,6 +7,7 @@
 
 #include <string>
 #include "GameState.hpp"
+#include "Color.hpp"
 
 namespace arcade
 {

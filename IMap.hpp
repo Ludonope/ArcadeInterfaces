@@ -4,7 +4,7 @@
 #define IMAP_HPP_
 
 #include <cstddef>
-#include "ILayer.hpp"
+#include "ITile.hpp"
 
 namespace arcade
 {
