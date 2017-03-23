@@ -1,4 +1,4 @@
-// v1.0.2
+// v1.0.3
 
 #ifndef IGAME_HPP_
 #define IGAME_HPP_
@@ -33,9 +33,17 @@ namespace arcade
     // Process
     virtual void process() = 0;
 
-    // Sound
-    virtual std::vector<std::string> getSoundsToLoad() const = 0;
-    virtual std::vector<int>         getSoundsToPlay() = 0;
+      // Sound
+      virtual std::vector<std::string> getSoundsToLoad() const = 0;
+      virtual std::vector<int>         getSoundsToPlay() = 0;
+
+      // Sprites
+      // @return std::vector<std::string> path of assets that need to be loaded by lib
+      virtual std::vector<std::string> const    &getSpritesToLoad() const = 0;
+      // @param takes the return vector from the IGfxLib::loadSprites() method to set ids of assets if you
+      // don't chose to set from 0 to n
+      virtual void                              setSpritesId(std::vector<int> spritesIds) = 0;
+
 
     // Map
     virtual IMap const &getCurrentMap() const = 0;

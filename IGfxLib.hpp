@@ -1,4 +1,4 @@
-// v1.0.3
+// v1.0.4
 
 #ifndef IGFXLIB_HPP_
 #define IGFXLIB_HPP_
@@ -23,6 +23,14 @@ namespace arcade
     virtual bool doesSupportSound() const = 0;
     virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
     virtual void playSound(int soundId) = 0;
+
+      // Sprites
+      // An easy way to now if your lib is graphical or not like ncurses
+      virtual bool                      doesSupportGraphic() const = 0;
+      // @param std::vector<std::string> const & to pass the path of your sprites to give your lib
+      //        the way to search your assets
+      // @return std::vector<int> to know the id list if you chose to not put them from 0 to n
+      virtual std::vector<int> const    &loadSprites(std::vector<std::string> const &sprites) = 0;
 
     // Window
     virtual void setSize(size_t height, size_t width) = 0;
