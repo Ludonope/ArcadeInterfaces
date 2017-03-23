@@ -2,16 +2,35 @@
 #define IGUI_HPP_
 
 #include <string>
-#include "GameState.hpp"
+#include <vector>
+#include "IComponent.hpp"
 
 namespace arcade
 {
+	///
+	/// \class IGUI
+	/// \brief Interface representing a GUI
+	///
   class IGUI
   {
   public:
-    virtual ~IGUI() = 0;
-    virtual void createComponent(std::string const& name, TypeComponent) = 0;
-    // NOT DEFINED YET
+	  ///
+	  /// \fn virtual ~IGUI()
+	  /// \brief Virtual destructor of the interface
+	  ///
+	  virtual ~IGUI() {};
+
+	  // Number of IComponent
+	  ///
+	  /// \fn virtual std::size_t size() const = 0
+	  /// \brief Return the number of elements
+	  ///
+	  virtual std::size_t size() const = 0;
+	  ///
+	  /// \fn virtual IComponent const &at(std::size_t n) const = 0
+	  /// \brief Access to the n element
+	  ///
+	  virtual IComponent const &at(std::size_t n) const = 0;
   };
 }
 
