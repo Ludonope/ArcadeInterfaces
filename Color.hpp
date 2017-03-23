@@ -3,29 +3,54 @@
 
 #include <cstdint>
 
+#define IS_LITTLE_ENDIAN (((union { uint32_t x; uint8_t c; }){1}).c)
+
 namespace arcade
 {
-  union Color
-  {
-    Color();
-    Color(uint32_t c);
-    Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255);
-    Color(Color const &c);
+	///
+	/// \union Color
+	/// \brief Union to store RGBa color
+	///
+	union Color
+	{
+		///
+		/// \fn Color(uint32_t c = Black.full)
+		/// \brief Constructor to create color from a 4 bytes integer
+		/// \param[in] c 4 bytes integer value containing a color
+		///
+		Color(uint32_t c = Black.full);
 
-	// Basic constant colors
-	static const Color Black;
-	static const Color White;
-	static const Color Red;
-	static const Color Green;
-	static const Color Blue;
-	static const Color Yellow;
-	static const Color Magenta;
-	static const Color Cyan;
-	static const Color Transparent;
-	
-	uint32_t full;
-    uint8_t  rgba[4];
-  };
+		///
+		/// \fn Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255)
+		/// \brief Constructor to create color from a 4 color component
+		/// \param[in] r Red color component value
+		/// \param[in] g Green color component value
+		/// \param[in] b Blue color component value
+		/// \param[in] a Alpha (opacity) color component value
+		///
+		Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255);
+
+		///
+		/// \fn Color(Color const &c)
+		/// \brief Constructor to copy a Color
+		/// \param[in] c Color to be copied
+		///
+		Color(Color const &c);
+
+		
+		static const Color Black; /// Black color
+		static const Color White; /// White color
+		static const Color Red; /// Red color
+		static const Color Green; /// Green color
+		static const Color Blue; /// Blue color
+		static const Color Yellow; /// Yellow color
+		static const Color Magenta; /// Magenta color
+		static const Color Cyan; /// Cyan color
+		static const Color Transparent; /// Transparent color
+
+		uint32_t full; /// 4 bytes integer value of the color
+		uint8_t  rgba[4]; /// array of the 4 color component
+	};
 }
 
 #endif // !COLOR_HPP_

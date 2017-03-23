@@ -5,27 +5,36 @@
 
 namespace arcade
 {
+	///
+	/// \enum GameState
+	/// \brief Describe current game state
+	///
     enum GameState
     {
-        NONE = -1,
-        INGAME,
-        PAUSED,
-        GAME_MENU,
-        MENU,
-        QUIT,
-        NB_GAME_STATE
+        NONE = -1, /// Unknown game state
+        INGAME, /// In game
+        PAUSED, /// Game paused
+        GAME_MENU, /// In in-game menu
+        MENU, /// In menu
+        QUIT, /// Quitting
+        NB_GAME_STATE /// Number of game states
     };
+
+	///
+	/// \enum TileTypeEvolution
+	/// \brief Type of map tile
+	///
     enum TileTypeEvolution
     {
-        EMPTY = 0,
-        BLOCK,
-        OBSTACLE, // FOR CENTIPEDE
-        ENEMY,
-        SHOT_ENEMY,
-        SHOT_PLAYER,
-        POWERUP,
-        PLAYER,
-        FOOD, // FOR PACMAN
+        EMPTY = 0, /// Empty tile
+        BLOCK, /// Block tile
+        OBSTACLE, /// Obstacle tile
+        ENEMY, /// Enemy tile
+        SHOT_ENEMY, /// Enemy shot tile
+        SHOT_PLAYER, /// Player shot tile
+        POWERUP, /// Powerup tile
+        PLAYER, /// Player tile
+        FOOD, /// Food tile
     };
 
     enum TypeComponent

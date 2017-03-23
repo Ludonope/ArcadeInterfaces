@@ -1,0 +1,54 @@
+\hypertarget{classarcade_1_1IGame}{}\section{arcade\+:\+:I\+Game Class Reference}
+\label{classarcade_1_1IGame}\index{arcade\+::\+I\+Game@{arcade\+::\+I\+Game}}
+
+
+Interface of a game for the Core program.  
+
+
+
+
+{\ttfamily \#include $<$I\+Game.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a89114f708822e3d0db5b58901c1e2354}\label{classarcade_1_1IGame_a89114f708822e3d0db5b58901c1e2354}} 
+virtual \hyperlink{classarcade_1_1IGame_a89114f708822e3d0db5b58901c1e2354}{$\sim$\+I\+Game} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor of the interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a75083f0465c0ccbdbbb38c689b4a694c}\label{classarcade_1_1IGame_a75083f0465c0ccbdbbb38c689b4a694c}} 
+virtual Game\+State \hyperlink{classarcade_1_1IGame_a75083f0465c0ccbdbbb38c689b4a694c}{get\+Game\+State} () const =0
+\begin{DoxyCompactList}\small\item\em Ask the current game state to the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a37d164b4052fa3c28256fb0bf0002876}\label{classarcade_1_1IGame_a37d164b4052fa3c28256fb0bf0002876}} 
+virtual void \hyperlink{classarcade_1_1IGame_a37d164b4052fa3c28256fb0bf0002876}{notify\+Event} (std\+::vector$<$ \hyperlink{structarcade_1_1Event}{Event} $>$ \&\&events)=0
+\begin{DoxyCompactList}\small\item\em Send events (keyboard, mouse, etc) to the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_aaf375290947abf3db32d966facbfacf3}\label{classarcade_1_1IGame_aaf375290947abf3db32d966facbfacf3}} 
+virtual void \hyperlink{classarcade_1_1IGame_aaf375290947abf3db32d966facbfacf3}{notify\+Network} (std\+::vector$<$ \hyperlink{structarcade_1_1NetworkPacket}{Network\+Packet} $>$ \&\&events)=0
+\begin{DoxyCompactList}\small\item\em Send network packets to the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a5aa80dfdb3c1881fbc749e3d53efc6f8}\label{classarcade_1_1IGame_a5aa80dfdb3c1881fbc749e3d53efc6f8}} 
+virtual std\+::vector$<$ \hyperlink{structarcade_1_1NetworkPacket}{Network\+Packet} $>$ \&\& \hyperlink{classarcade_1_1IGame_a5aa80dfdb3c1881fbc749e3d53efc6f8}{get\+Network\+To\+Send} ()=0
+\begin{DoxyCompactList}\small\item\em Get the network packet to send from the game to the server. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_af0111a41083f38a1af1a7f94287e6e77}\label{classarcade_1_1IGame_af0111a41083f38a1af1a7f94287e6e77}} 
+virtual void \hyperlink{classarcade_1_1IGame_af0111a41083f38a1af1a7f94287e6e77}{process} ()=0
+\begin{DoxyCompactList}\small\item\em Make the game process a game loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a0b66cd9ef3b5cd0dff95debb7e4f594e}\label{classarcade_1_1IGame_a0b66cd9ef3b5cd0dff95debb7e4f594e}} 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{classarcade_1_1IGame_a0b66cd9ef3b5cd0dff95debb7e4f594e}{get\+Sounds\+To\+Load} () const =0
+\begin{DoxyCompactList}\small\item\em get the list of sound files to load for this game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_ae3eb6cb6fbc1aeefbbe67b61ee4b07f9}\label{classarcade_1_1IGame_ae3eb6cb6fbc1aeefbbe67b61ee4b07f9}} 
+virtual std\+::vector$<$ int $>$ \&\& \hyperlink{classarcade_1_1IGame_ae3eb6cb6fbc1aeefbbe67b61ee4b07f9}{get\+Sounds\+To\+Play} ()=0
+\begin{DoxyCompactList}\small\item\em Get the sounds to play. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a2e1791071bf65ee35e249e409ee29044}\label{classarcade_1_1IGame_a2e1791071bf65ee35e249e409ee29044}} 
+virtual \hyperlink{classarcade_1_1IMap}{I\+Map} const  \& \hyperlink{classarcade_1_1IGame_a2e1791071bf65ee35e249e409ee29044}{get\+Current\+Map} () const =0
+\begin{DoxyCompactList}\small\item\em Get the current version of the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGame_a577815e0d2c32808bcce406dde414b9d}\label{classarcade_1_1IGame_a577815e0d2c32808bcce406dde414b9d}} 
+virtual \hyperlink{classarcade_1_1IGUI}{I\+G\+UI} const  \& \hyperlink{classarcade_1_1IGame_a577815e0d2c32808bcce406dde414b9d}{get\+G\+UI} () const =0
+\begin{DoxyCompactList}\small\item\em Get the current version of the G\+UI to display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of a game for the Core program. 
+
+This interface will be used by the Core program to manipulate a game without knowing any detail about it The Core will always do \char`\"{}request\char`\"{} to the game, to get information or ask for processing a game loop, for example. The \hyperlink{classarcade_1_1IGame}{I\+Game} will never have a reference to the Core, or communicate directly with it. Never. Ever. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Game.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{classarcade_1_1IMap}{}\section{arcade\+:\+:I\+Map Class Reference}
+\label{classarcade_1_1IMap}\index{arcade\+::\+I\+Map@{arcade\+::\+I\+Map}}
+
+
+Interface representing a Map.  
+
+
+
+
+{\ttfamily \#include $<$I\+Map.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1IMap_aaa3aa1b624552b9ab830067ab42f78dd}\label{classarcade_1_1IMap_aaa3aa1b624552b9ab830067ab42f78dd}} 
+virtual \hyperlink{classarcade_1_1IMap_aaa3aa1b624552b9ab830067ab42f78dd}{$\sim$\+I\+Map} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor of the interface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IMap_a97d81d77f7e3b950ed059d6dcc2dde0b}\label{classarcade_1_1IMap_a97d81d77f7e3b950ed059d6dcc2dde0b}} 
+virtual const \hyperlink{classarcade_1_1ILayer}{I\+Layer} \& \hyperlink{classarcade_1_1IMap_a97d81d77f7e3b950ed059d6dcc2dde0b}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t n) const =0
+\begin{DoxyCompactList}\small\item\em Get a specific layer of the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IMap_a3e5fc4c5286f92fb49c8c7d0e79f4510}\label{classarcade_1_1IMap_a3e5fc4c5286f92fb49c8c7d0e79f4510}} 
+virtual size\+\_\+t \hyperlink{classarcade_1_1IMap_a3e5fc4c5286f92fb49c8c7d0e79f4510}{get\+Layer\+Nb} () const =0
+\begin{DoxyCompactList}\small\item\em Get the number of layers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IMap_a6e7534eeff05277f1429037f8b01e25f}\label{classarcade_1_1IMap_a6e7534eeff05277f1429037f8b01e25f}} 
+virtual size\+\_\+t \hyperlink{classarcade_1_1IMap_a6e7534eeff05277f1429037f8b01e25f}{get\+Width} () const =0
+\begin{DoxyCompactList}\small\item\em Get the width of the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IMap_a9282ac731fa61b8c18241a309efbd6a0}\label{classarcade_1_1IMap_a9282ac731fa61b8c18241a309efbd6a0}} 
+virtual size\+\_\+t \hyperlink{classarcade_1_1IMap_a9282ac731fa61b8c18241a309efbd6a0}{get\+Height} () const =0
+\begin{DoxyCompactList}\small\item\em Get the height of the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface representing a Map. 
+
+A map is composed of layers, which contain tiles. If you want to access to the tile x\+:3 y\+:8 of the layer 2 you just have to do map\mbox{[}2\mbox{]}\mbox{[}8\mbox{]}\mbox{[}3\mbox{]} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Map.\+hpp\end{DoxyCompactItemize}

@@ -5,19 +5,20 @@
 
 namespace arcade
 {
-    class ILevel
-    {
-    public:
-        // TODO
-
-        virtual                         ~ILevel(){};
-
-        virtual std::unique_ptr<IMap>   getMap() const = 0;
-        virtual unsigned int            getDifficulty() const = 0;
-
-        virtual void                    setMap(const std::unique_ptr<IMap> levelMap) = 0;
-        virtual void                    setDifficulty(unsigned int levelDifficulty) = 0;
-    };
+  ///
+  /// \class ILevel
+  /// \brief Interface representing a game level
+  ///
+  class ILevel
+  {
+  public:
+    ///
+    /// \fn virtual ~ILevel()
+    /// \brief Virtual destructor of the interface
+    ///
+    virtual ~ILevel(){};
+    // NOT DEFINED YET
+  };
 }
 
 #endif // !ILEVEL_HPP_

@@ -1,0 +1,63 @@
+\hypertarget{classarcade_1_1IGfxLib}{}\section{arcade\+:\+:I\+Gfx\+Lib Class Reference}
+\label{classarcade_1_1IGfxLib}\index{arcade\+::\+I\+Gfx\+Lib@{arcade\+::\+I\+Gfx\+Lib}}
+
+
+Interface of a graphic lib for the Core program.  
+
+
+
+
+{\ttfamily \#include $<$I\+Gfx\+Lib.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a1dc0971c862d69be60af1d3b82960c77}\label{classarcade_1_1IGfxLib_a1dc0971c862d69be60af1d3b82960c77}} 
+virtual \hyperlink{classarcade_1_1IGfxLib_a1dc0971c862d69be60af1d3b82960c77}{$\sim$\+I\+Gfx\+Lib} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor of the interface. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classarcade_1_1IGfxLib_a82cdd82f168ca898ef81edf82ca6147a}{poll\+Event} (\hyperlink{structarcade_1_1Event}{Event} \&e)=0
+\begin{DoxyCompactList}\small\item\em Function to poll events from the graphic lib. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a68cfbc987dfecca5b1405e36e00157b2}\label{classarcade_1_1IGfxLib_a68cfbc987dfecca5b1405e36e00157b2}} 
+virtual bool \hyperlink{classarcade_1_1IGfxLib_a68cfbc987dfecca5b1405e36e00157b2}{does\+Support\+Sound} () const =0
+\begin{DoxyCompactList}\small\item\em Ask if the library support sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_aa5a0867d08be135250a8bf12782bc14f}\label{classarcade_1_1IGfxLib_aa5a0867d08be135250a8bf12782bc14f}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_aa5a0867d08be135250a8bf12782bc14f}{load\+Sounds} (std\+::vector$<$ std\+::string $>$ const \&sounds)=0
+\begin{DoxyCompactList}\small\item\em Ask the lib to load sounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_af0aab5b755b9dfed6838bfc370e5c8b3}\label{classarcade_1_1IGfxLib_af0aab5b755b9dfed6838bfc370e5c8b3}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_af0aab5b755b9dfed6838bfc370e5c8b3}{play\+Sound} (int sound\+Id)=0
+\begin{DoxyCompactList}\small\item\em Ask the lib to play a sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_addc883f69b75e6ec4927027aad94f5b5}\label{classarcade_1_1IGfxLib_addc883f69b75e6ec4927027aad94f5b5}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_addc883f69b75e6ec4927027aad94f5b5}{update\+Map} (\hyperlink{classarcade_1_1IMap}{I\+Map} const \&map)=0
+\begin{DoxyCompactList}\small\item\em Update the map displayed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a2ad7be45675c5d119293dcd64bdb0274}\label{classarcade_1_1IGfxLib_a2ad7be45675c5d119293dcd64bdb0274}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_a2ad7be45675c5d119293dcd64bdb0274}{update\+G\+UI} (\hyperlink{classarcade_1_1IGUI}{I\+G\+UI} const \&gui)=0
+\begin{DoxyCompactList}\small\item\em Update the G\+UI displayed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a7f280525c718a44c1e05cfe0ba5304c3}\label{classarcade_1_1IGfxLib_a7f280525c718a44c1e05cfe0ba5304c3}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_a7f280525c718a44c1e05cfe0ba5304c3}{display} ()=0
+\begin{DoxyCompactList}\small\item\em Display the map and G\+UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a4116b3d4f503c4a795539b584f77a73d}\label{classarcade_1_1IGfxLib_a4116b3d4f503c4a795539b584f77a73d}} 
+virtual void \hyperlink{classarcade_1_1IGfxLib_a4116b3d4f503c4a795539b584f77a73d}{clear} ()=0
+\begin{DoxyCompactList}\small\item\em Ask the lib to clear the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of a graphic lib for the Core program. 
+
+This interface will be used by the Core program to manipulate a graphic lib without knowing any detail about it The Core will always do \char`\"{}request\char`\"{} to the lib, to get information or ask for displaying the map and G\+UI, for example. The \hyperlink{classarcade_1_1IGfxLib}{I\+Gfx\+Lib} will never have a reference to the Core, or communicate directly with it. Never. Ever. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1IGfxLib_a82cdd82f168ca898ef81edf82ca6147a}\label{classarcade_1_1IGfxLib_a82cdd82f168ca898ef81edf82ca6147a}} 
+\index{arcade\+::\+I\+Gfx\+Lib@{arcade\+::\+I\+Gfx\+Lib}!poll\+Event@{poll\+Event}}
+\index{poll\+Event@{poll\+Event}!arcade\+::\+I\+Gfx\+Lib@{arcade\+::\+I\+Gfx\+Lib}}
+\subsubsection{\texorpdfstring{poll\+Event()}{pollEvent()}}
+{\footnotesize\ttfamily bool arcade\+::\+I\+Gfx\+Lib\+::poll\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{structarcade_1_1Event}{Event} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Function to poll events from the graphic lib. 
+
+If there is an event to poll, e is filled and true is returned. If not, false is returned. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+I\+Gfx\+Lib.\+hpp\end{DoxyCompactItemize}
