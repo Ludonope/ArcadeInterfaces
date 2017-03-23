@@ -2,16 +2,19 @@
 #define IGUI_HPP_
 
 #include <string>
-#include "GameState.hpp"
+#include <vector>
+#include "IComponent.hpp"
 
 namespace arcade
 {
   class IGUI
   {
   public:
-    virtual ~IGUI() = 0;
-    virtual void createComponent(std::string const& name, TypeComponent) = 0;
-    // NOT DEFINED YET
+	  virtual ~IGUI() {};
+
+	  // Number of IComponent
+	  virtual std::size_t size() const = 0;
+	  virtual IComponent const &at(std::size_t n) const = 0;
   };
 }
 
