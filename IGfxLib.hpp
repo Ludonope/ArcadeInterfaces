@@ -70,11 +70,6 @@ namespace arcade
     ///        the way to search your assets
     virtual std::vector<int> const    &loadSprites(std::vector<std::string> const &sprites) = 0;
 
-    // Window
-    virtual void setSize(size_t height, size_t width) = 0;
-    virtual void setPosition(size_t y, size_t x) = 0;
-    virtual void initializeWindow() = 0;
-
     // Map
     ///
     /// \fn virtual void updateMap(IMap const &map) = 0
