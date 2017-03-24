@@ -3,6 +3,10 @@
 
 namespace arcade
 {
+	///
+	/// \struct NetworkPacket
+	/// \brief Network packet
+	///
   struct NetworkPacket
   {
   };

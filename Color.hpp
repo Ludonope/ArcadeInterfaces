@@ -37,7 +37,6 @@ namespace arcade
 		///
 		Color(Color const &c);
 
-
 		static const Color Black; /// Black color
 		static const Color White; /// White color
 		static const Color Red; /// Red color
