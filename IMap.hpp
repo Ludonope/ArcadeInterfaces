@@ -4,7 +4,7 @@
 #define IMAP_HPP_
 
 #include <cstddef>
-#include "ILayer.hpp"
+#include "ITile.hpp"
 
 namespace arcade
 {
@@ -13,8 +13,9 @@ namespace arcade
 	/// \brief Interface representing a Map
 	///
 	/// A map is composed of layers, which contain tiles.
+    /// Your Map must support them from its own
 	/// If you want to access to the tile x:3 y:8 of the layer 2
-	/// you just have to do map[2][8][3]
+	/// you have to use the at method like IMap::at(2, 3, 8);
 	///
   class IMap
   {
@@ -26,10 +27,10 @@ namespace arcade
     virtual ~IMap(){};
 
 	///
-	/// \fn virtual const ILayer &operator[](size_t n) const = 0
-	/// \brief Get a specific layer of the map
+	/// \fn virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0
+	/// \brief Get a specific ITile of the map
 	///
-    virtual const ILayer &operator[](size_t n) const = 0;
+    virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0;
 	///
 	/// \fn virtual size_t getLayerNb() const = 0
 	/// \brief Get the number of layers
