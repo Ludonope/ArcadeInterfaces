@@ -52,22 +52,21 @@ namespace arcade
 #if IS_LITTLE_ENDIAN
 		struct
 		{
-			uint8_t a;
-			uint8_t b;
-			uint8_t g;
-		 	uint8_t r;
-		};
-	};
-#else
-		struct
-		{
 			uint8_t r;
 			uint8_t g;
 			uint8_t b;
 			uint8_t a;
 		};
-	};
+#else
+		struct
+		{
+			uint8_t a;
+			uint8_t b;
+			uint8_t g;
+		 	uint8_t r;
+		};
 #endif
+	};
 }
 
 #endif // !COLOR_HPP_
