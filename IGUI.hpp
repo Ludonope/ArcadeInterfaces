@@ -2,6 +2,7 @@
 #define IGUI_HPP_
 
 #include <string>
+#include <memory>
 #include <vector>
 #include "IComponent.hpp"
 
@@ -33,8 +34,8 @@ namespace arcade
     virtual IComponent const &at(std::size_t n) const = 0;
 
     // To allow for ranged loop on it's components
-    virtual std::vector<IComponent *>::const_iterator begin() const = 0;
-    virtual std::vector<IComponent *>::const_iterator end() const = 0;
+    virtual std::vector<std::unique_ptr<IComponent>>::const_iterator begin() const = 0;
+    virtual std::vector<std::unique_ptr<IComponent>>::const_iterator end() const = 0;
   };
 }
 
