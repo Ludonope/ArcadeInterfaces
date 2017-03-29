@@ -65,10 +65,10 @@ namespace arcade
     virtual bool                      doesSupportGraphic() const = 0;
     ///
     /// \fn virtual std::vector<int> const &loadSprites(std::vector<std::string> const &sprites) = 0
-    /// \brief return vector of int to know the id list if you chose to not put them from 0 to n
+    /// \brief Load sprites in the lib from the paths given by the game
     /// \param sprites to pass the path of your sprites to give your lib
     ///        the way to search your assets
-    virtual std::vector<int> const    &loadSprites(std::vector<std::string> const &sprites) = 0;
+    virtual void loadSprites(std::vector<std::string> const &sprites) = 0;
 
     // Map
     ///
