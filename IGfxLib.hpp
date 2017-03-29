@@ -67,7 +67,7 @@ namespace arcade
 	/// \fn virtual void playSound(int soundId) = 0
 	/// \brief Ask the lib to play a sound
 	///
-    virtual void playSound(std::vector<Sound>) = 0;
+    virtual void playSound(const &Sound) = 0;
 
     // Map
 	///
