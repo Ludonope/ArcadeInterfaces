@@ -87,12 +87,6 @@ namespace arcade
     /// \fn virtual std::vector<std::string> const &getSpritesToLoad() const = 0
     /// \brief path of assets that need to be loaded by lib
     virtual std::vector<std::string> const    &getSpritesToLoad() const = 0;
-    ///
-    /// \fn virtual void setSpritesId(std::vector<int> spritesIds) = 0
-    /// \brief Set sprites Ids in the game
-    /// \param spritesIds the return vector from the IGfxLib::loadSprites() method to set ids of assets if you
-    /// chose not to set from 0 to n
-    virtual void                              setSpritesId(std::vector<int> spritesIds) = 0;
 
     // Map
     ///
