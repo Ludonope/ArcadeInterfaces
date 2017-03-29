@@ -43,6 +43,17 @@ namespace arcade
 
     // Sound
 	///
+	/// \fn SoundMode
+	/// \brief Contain the id of the sound and the mode (unique or infinite)
+	///
+    struct  Sound {
+      enum SoundMode { UNIQUE, REPEAT };
+      int		id;
+      SoundMode		mode;
+
+      Sound(int _id, SoundMode _mode = UNIQUE) : id(_id), mode(_mode) {}
+    };
+	///
 	/// \fn virtual bool doesSupportSound() const = 0
 	/// \brief Ask if the library support sound
 	///
@@ -56,7 +67,7 @@ namespace arcade
 	/// \fn virtual void playSound(int soundId) = 0
 	/// \brief Ask the lib to play a sound
 	///
-    virtual void playSound(int soundId) = 0;
+    virtual void playSound(std::vector<Sound>) = 0;
 
     // Map
 	///
