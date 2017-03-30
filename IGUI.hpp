@@ -28,14 +28,10 @@ namespace arcade
     ///
     virtual std::size_t size() const = 0;
     ///
-    /// \fn virtual IComponent const &at(std::size_t n) const = 0
+    /// \fn virtual IComponent &at(std::size_t n) = 0
     /// \brief Access to the n element
     ///
-    virtual IComponent const &at(std::size_t n) const = 0;
-
-    // To allow for ranged loop on it's components
-    virtual std::vector<std::unique_ptr<IComponent>>::const_iterator begin() const = 0;
-    virtual std::vector<std::unique_ptr<IComponent>>::const_iterator end() const = 0;
+    virtual IComponent &at(std::size_t n) = 0;
   };
 }
 

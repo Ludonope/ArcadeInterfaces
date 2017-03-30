@@ -27,11 +27,6 @@ namespace arcade
     virtual ~IMap(){};
 
 	///
-	/// \fn virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0
-	/// \brief Get a specific ITile of the map
-	///
-    virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0;
-	///
 	/// \fn virtual size_t getLayerNb() const = 0
 	/// \brief Get the number of layers
 	///
@@ -46,6 +41,11 @@ namespace arcade
 	/// \brief Get the height of the map
 	///
     virtual size_t getHeight() const = 0;
+	///
+	/// \fn virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0
+	/// \brief Get a specific ITile of the map
+	///
+    virtual ITile const &at(size_t layer, size_t x, size_t y) const = 0;
   };
 }
 

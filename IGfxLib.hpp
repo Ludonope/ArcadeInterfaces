@@ -41,6 +41,13 @@ namespace arcade
 	///
     virtual bool pollEvent(Event &e) = 0;
 
+    // Sprites
+        ///
+	/// \fn virtual void loadSprtes(std::vector<std::string> const &sprtes) = 0
+	/// \brief Ask the lib to remove and load new sprtes
+	///
+    virtual void loadSprites(std::vector<std::string> const &sprites) = 0;
+
     // Sound
 	///
 	/// \fn virtual bool doesSupportSound() const = 0
@@ -49,7 +56,7 @@ namespace arcade
     virtual bool doesSupportSound() const = 0;
 	///
 	/// \fn virtual void loadSounds(std::vector<std::string> const &sounds) = 0
-	/// \brief Ask the lib to load sounds
+	/// \brief Ask the lib to remove and load new sounds
 	///
     virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
 	///
@@ -67,10 +74,10 @@ namespace arcade
 
     // GUI
 	///
-	/// \fn virtual void updateGUI(IGUI const &gui) = 0
+	/// \fn virtual void updateGUI(IGUI &gui) = 0
 	/// \brief Update the GUI displayed
 	///
-    virtual void updateGUI(IGUI const &gui) = 0;
+    virtual void updateGUI(IGUI &gui) = 0;
 
     // Display
 	///

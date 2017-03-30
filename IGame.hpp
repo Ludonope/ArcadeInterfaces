@@ -68,6 +68,13 @@ namespace arcade
 	///
     virtual void process() = 0;
 
+    // Sprites
+	///
+	/// \fn virtual std::vector<std::string> getSpritesToLoad() const = 0
+	/// \brief get the list of sprites to load for this game
+	///
+    virtual std::vector<std::string> getSpritesToLoad() const = 0;
+
     // Sound
 	///
 	/// \fn virtual std::vector<std::string> getSoundsToLoad() const = 0
