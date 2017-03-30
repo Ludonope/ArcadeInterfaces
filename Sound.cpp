@@ -4,6 +4,6 @@
 
 #include "Sound.hpp"
 
-arcade::Sound::Sound(unsigned int _id, SoundMode _mode, SoundType _type, float _volume)
-        : id(_id), mode(_mode), type(_type), volume(_volume)
+arcade::Sound::Sound(unsigned int id, SoundMode mode, SoundType type, float volume)
+        : id(id), mode(mode), type(type), volume(volume)
 {}
