@@ -49,11 +49,19 @@ namespace arcade
     virtual size_t getSpriteId() const = 0;
 	///
 	/// \fn virtual size_t getSpritePos() const = 0
-	/// \brief Get the sprite position
+	/// \brief Get the sprite position in it's animation
 	///
     virtual size_t getSpritePos() const = 0;
-
-    // TODO: animation
+	///
+	/// \fn virtual double getShiftX() const = 0
+	/// \brief Get the tile position shift on x
+	///
+    virtual double getShiftX() const = 0;
+    	///
+	/// \fn virtual size_t getShiftY() const = 0
+	/// \brief Get the tile position shift on y
+	///
+    virtual double getShiftY() const = 0;
   };
 }
 
