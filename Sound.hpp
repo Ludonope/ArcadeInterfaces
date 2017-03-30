@@ -34,7 +34,7 @@ namespace arcade
         SoundType       type;
         float           volume;
 
-        Sound(unsigned int _id, SoundMode _mode = UNIQUE, SoundType _type = MUSIC, float _volume = 50.0f);
+        Sound(unsigned int id, SoundMode mode = UNIQUE, SoundType type = SOUND, float volume = 50.0f);
     };
 
 }
