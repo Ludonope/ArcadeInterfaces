@@ -47,10 +47,10 @@ namespace arcade
         /// \param mode Mode du son
         /// \param type Type de son
         /// \param volume Volume du son
-        Sound(unsigned int id, SoundMode mode = UNIQUE, SoundType type = SOUND, float volume = 50.0f);
-        
+        Sound(unsigned int id, SoundAction mode = UNIQUE, SoundType type = SOUND, float volume = 50.0f);
+
         unsigned int	id; /// Id of the sound
-        SoundMode		mode; /// Mode of the sound (control)
+        SoundAction	mode; /// Mode of the sound (control)
         SoundType       type; /// Type of the sound
         float           volume; /// Volume
     };
