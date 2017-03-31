@@ -12,7 +12,7 @@ namespace arcade
     /// \enum SoundMode
     /// \brief Used to control the way sound is played
     ///
-    enum SoundMode
+    enum SoundAction
     {
         UNIQUE, /// Sound played once
         REPEAT, /// Sound played indefinitly (common for musics)
