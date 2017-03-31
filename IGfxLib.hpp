@@ -8,6 +8,7 @@
 #include "Event.hpp"
 #include "IMap.hpp"
 #include "IGUI.hpp"
+#include "ISprite.hpp"
 
 namespace arcade
 {
@@ -68,7 +69,7 @@ namespace arcade
     /// \brief Load sprites in the lib from the paths given by the game
     /// \param sprites to pass the path of your sprites to give your lib
     ///        the way to search your assets
-    virtual void loadSprites(std::vector<std::string> const &sprites) = 0;
+    virtual void loadSprites(std::vector<ISprite> const &sprites) = 0;
 
     // Map
     ///
