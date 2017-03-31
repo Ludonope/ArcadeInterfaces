@@ -43,6 +43,11 @@ namespace arcade
 	///
     virtual Color getColor() const = 0;
 	///
+	/// \fn virtual bool hasSprite() const = 0
+	/// \brief Returns if the Tile has a sprite affected, if not, use getColor()
+	///
+    virtual bool hasSprite() const = 0;
+	///
 	/// \fn virtual size_t getSpriteId() const = 0
 	/// \brief Get the sprite ID (0 if none)
 	///
