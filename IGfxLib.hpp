@@ -9,6 +9,7 @@
 #include "IMap.hpp"
 #include "IGUI.hpp"
 #include "ISprite.hpp"
+#include "Sound.hpp"
 
 namespace arcade
 {
@@ -53,11 +54,11 @@ namespace arcade
     /// \brief Ask the lib to load sounds
     ///
     virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
-    ///
-    /// \fn virtual void playSound(int soundId) = 0
-    /// \brief Ask the lib to play a sound
-    ///
-    virtual void playSound(int soundId) = 0;
+	  ///
+	  /// \fn virtual void soundControl(const Sound &sound) = 0
+	  /// \brief Ask the lib to play a sound
+	  ///
+    virtual void soundControl(const Sound &sound) = 0;
 
     // Sprites
     ///
