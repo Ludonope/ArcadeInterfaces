@@ -12,6 +12,7 @@
 #include "IMap.hpp"
 #include "ILevel.hpp"
 #include "IGUI.hpp"
+#include "ISprite.hpp"
 
 namespace arcade
 {
@@ -86,7 +87,7 @@ namespace arcade
     ///
     /// \fn virtual std::vector<std::string> const &getSpritesToLoad() const = 0
     /// \brief path of assets that need to be loaded by lib
-    virtual std::vector<std::string> const    &getSpritesToLoad() const = 0;
+    virtual std::vector<ISprite> const    &getSpritesToLoad() const = 0;
 
     // Map
     ///
