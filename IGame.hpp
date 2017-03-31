@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 #include "GameState.hpp"
 #include "Event.hpp"
 #include "NetworkPacket.hpp"
@@ -69,7 +70,12 @@ namespace arcade
     ///
     virtual void process() = 0;
 
-
+    // Sprites
+  	///
+	  /// \fn virtual std::vector<std::string> getSpritesToLoad() const = 0
+	  /// \brief get the list of sprites to load for this game
+	  ///
+    virtual std::vector<std::unique_ptr<ISprite>> &&getSpritesToLoad() const = 0;
 
     // Sound
     ///
@@ -82,12 +88,6 @@ namespace arcade
     /// \brief Get the sounds to play
     ///
     virtual std::vector<int>       &&getSoundsToPlay() = 0;
-
-    // Sprites
-    ///
-    /// \fn virtual std::vector<std::string> const &getSpritesToLoad() const = 0
-    /// \brief path of assets that need to be loaded by lib
-    virtual std::vector<ISprite> const    &getSpritesToLoad() const = 0;
 
     // Map
     ///

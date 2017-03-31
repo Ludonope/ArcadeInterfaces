@@ -1,29 +1,28 @@
-//Version 1.0
+//Version 1.0.1
 
 #ifndef GAMESTATE_HPP_
 #define GAMESTATE_HPP_
 
 namespace arcade
 {
-	///
-	/// \enum GameState
-	/// \brief Describe current game state
-	///
+    ///
+    /// \enum GameState
+    /// \brief Describe current game state
+    ///
     enum GameState
     {
         NONE = -1, /// Unknown game state
+	LOADING, /// The game was just loaded (need to load sounds and sprites)
         INGAME, /// In game
-        PAUSED, /// Game paused
-        GAME_MENU, /// In in-game menu
         MENU, /// In menu
         QUIT, /// Quitting
         NB_GAME_STATE /// Number of game states
     };
 
-	///
-	/// \enum TileTypeEvolution
-	/// \brief Type of map tile
-	///
+    ///
+    /// \enum TileTypeEvolution
+    /// \brief Type of map tile
+    ///
     enum TileTypeEvolution
     {
         EMPTY = 0, /// Empty tile
@@ -35,13 +34,6 @@ namespace arcade
         POWERUP, /// Powerup tile
         PLAYER, /// Player tile
         FOOD, /// Food tile
-    };
-
-    enum TypeComponent
-    {
-        TEXT = 0,
-        BUTTON,
-        SLIDER
     };
 }
 #endif // !GAMESTATE_HPP_

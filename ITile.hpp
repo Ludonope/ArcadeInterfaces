@@ -32,20 +32,16 @@ namespace arcade
 	/// \brief Get the type of the tile (mostly used for moulinette)
 	///
     virtual TileType getType() const = 0;
-    virtual void setType(TileType type) = 0;
 	///
 	/// \fn virtual TileTypeEvolution getTypeEv() const = 0
 	/// \brief Get the TypeEv of the tile
 	///
     virtual TileTypeEvolution getTypeEv() const = 0;
-    virtual void setTypeEv(TileTypeEvolution type) = 0;
 	///
 	/// \fn virtual Color getColor() const = 0
 	/// \brief Get the color of the tile
 	///
     virtual Color getColor() const = 0;
-    virtual void setColor(union Color color) = 0;
-
 	///
 	/// \fn virtual size_t getSpriteId() const = 0
 	/// \brief Get the sprite ID (0 if none)
@@ -53,16 +49,19 @@ namespace arcade
     virtual size_t getSpriteId() const = 0;
 	///
 	/// \fn virtual size_t getSpritePos() const = 0
-	/// \brief Get the sprite position
+	/// \brief Get the sprite position in it's animation
 	///
     virtual size_t getSpritePos() const = 0;
-
-    virtual void   nextSprite() = 0;
-    virtual void   prevSprite() = 0;
-    virtual void setSpritePos(size_t pos) = 0;
-    virtual void setSprite(size_t id) = 0;
-
-    // TODO: animation
+	///
+	/// \fn virtual double getShiftX() const = 0
+	/// \brief Get the tile position shift on x
+	///
+    virtual double getShiftX() const = 0;
+    	///
+	/// \fn virtual size_t getShiftY() const = 0
+	/// \brief Get the tile position shift on y
+	///
+    virtual double getShiftY() const = 0;
   };
 }
 

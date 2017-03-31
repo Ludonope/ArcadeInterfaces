@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 #include "Event.hpp"
 #include "IMap.hpp"
 #include "IGUI.hpp"
@@ -49,10 +50,10 @@ namespace arcade
     /// \brief Ask if the library support sound
     ///
     virtual bool doesSupportSound() const = 0;
-    ///
-    /// \fn virtual void loadSounds(std::vector<std::string> const &sounds) = 0
-    /// \brief Ask the lib to load sounds
-    ///
+  	///
+	  /// \fn virtual void loadSounds(std::vector<std::string> const &sounds) = 0
+  	/// \brief Ask the lib to remove and load new sounds
+	  ///
     virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
 	  ///
 	  /// \fn virtual void soundControl(const Sound &sound) = 0
@@ -62,15 +63,11 @@ namespace arcade
 
     // Sprites
     ///
-    /// \fn virtual bool doesSupportGraphic() const = 0
-    /// \brief An easy way to now if your lib is graphical or not like ncurses
-    virtual bool                      doesSupportGraphic() const = 0;
-    ///
     /// \fn virtual std::vector<int> const &loadSprites(std::vector<std::string> const &sprites) = 0
     /// \brief Load sprites in the lib from the paths given by the game
     /// \param sprites to pass the path of your sprites to give your lib
     ///        the way to search your assets
-    virtual void loadSprites(std::vector<ISprite> const &sprites) = 0;
+    virtual void loadSprites(std::vector<std::unique_ptr<ISprite>> &&sprites) = 0;
 
     // Map
     ///
@@ -80,11 +77,11 @@ namespace arcade
     virtual void updateMap(IMap const &map) = 0;
 
     // GUI
-    ///
-    /// \fn virtual void updateGUI(IGUI const &gui) = 0
-    /// \brief Update the GUI displayed
-    ///
-    virtual void updateGUI(IGUI const &gui) = 0;
+  	///
+	  /// \fn virtual void updateGUI(IGUI &gui) = 0
+  	/// \brief Update the GUI displayed
+	  ///
+    virtual void updateGUI(IGUI &gui) = 0;
 
     // Display
     ///
