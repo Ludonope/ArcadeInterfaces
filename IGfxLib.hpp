@@ -8,6 +8,7 @@
 #include "Event.hpp"
 #include "IMap.hpp"
 #include "IGUI.hpp"
+#include "Sound.hpp"
 
 namespace arcade
 {
@@ -56,7 +57,7 @@ namespace arcade
 	/// \fn virtual void playSound(int soundId) = 0
 	/// \brief Ask the lib to play a sound
 	///
-    virtual void playSound(int soundId) = 0;
+    virtual void soundControl(const Sound &sound) = 0;
 
     // Map
 	///
