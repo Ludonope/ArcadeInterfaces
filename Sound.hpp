@@ -16,6 +16,8 @@ namespace arcade
     {
         UNIQUE, /// Sound played once
         REPEAT, /// Sound played indefinitly (common for musics)
+	VOLUME, // Update the volume
+	PLAY, // Play a sound
         PAUSE, /// Pause a sound
         RESUME, /// Resume a sound
         STOP /// Stop completly a sound
@@ -51,7 +53,6 @@ namespace arcade
 
         unsigned int	id; /// Id of the sound
         SoundAction	mode; /// Mode of the sound (control)
-        SoundType       type; /// Type of the sound
         float           volume; /// Volume
     };
 
