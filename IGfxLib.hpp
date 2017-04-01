@@ -50,11 +50,11 @@ namespace arcade
     /// \brief Ask if the library support sound
     ///
     virtual bool doesSupportSound() const = 0;
-  	///
-	  /// \fn virtual void loadSounds(std::vector<std::string> const &sounds) = 0
+	  ///
+	  /// \fn virtual void loadSounds(std::vector<std::pair<std::string, SoundType > > const &sounds) = 0
   	/// \brief Ask the lib to remove and load new sounds
 	  ///
-    virtual void loadSounds(std::vector<std::string> const &sounds) = 0;
+    virtual void loadSounds(std::vector<std::pair<std::string, SoundType > > const &sounds) = 0;
 	  ///
 	  /// \fn virtual void soundControl(const Sound &sound) = 0
 	  /// \brief Ask the lib to play a sound
