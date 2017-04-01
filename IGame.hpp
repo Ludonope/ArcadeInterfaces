@@ -102,7 +102,7 @@ namespace arcade
     /// \fn virtual IGUI const &getGUI() const = 0
     /// \brief Get the current version of the GUI to display
     ///
-    virtual IGUI const &getGUI() const = 0;
+    virtual IGUI &getGUI() = 0;
   };
 }
 
