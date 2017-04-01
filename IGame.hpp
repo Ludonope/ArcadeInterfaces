@@ -82,7 +82,7 @@ namespace arcade
     /// \fn virtual std::vector<std::string> getSoundsToLoad() const = 0
     /// \brief get the list of sound files to load for this game
     ///
-    virtual std::vector<std::string> getSoundsToLoad() const = 0;
+    virtual std::vector<std::pair<std::string, SoundType > > getSoundsToLoad() const = 0;
     ///
     /// \fn virtual std::vector<int>       &&getSoundsToPlay() = 0
     /// \brief Get the sounds to play
