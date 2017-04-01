@@ -53,7 +53,6 @@ namespace arcade
 
         unsigned int	id; /// Id of the sound
         SoundAction	mode; /// Mode of the sound (control)
-        SoundType       type; /// Type of the sound
         float           volume; /// Volume
     };
 
