@@ -23,7 +23,6 @@ namespace arcade
       /// \brief Virtual destructor of the interface
       ///
         virtual ~IComponent(){};
-
       ///
       /// \fn virtual double getX() const = 0
       /// \brief Get the X position (between 0.0 and 1.0)
@@ -34,7 +33,6 @@ namespace arcade
       /// \brief Get the Y position (between 0.0 and 1.0)
       ///
       virtual double getY() const = 0;
-
       ///
       /// \fn virtual double getWidht() const = 0
       /// \brief Get the component's width (between 0.0 and 1.0)
@@ -45,7 +43,11 @@ namespace arcade
       /// \brief Get the component's height (between 0.0 and 1.0)
       ///
       virtual double getHeight() const = 0;
-
+      ///
+      /// \fn virtual bool hasSprite() const = 0
+      /// \brief Return true if the component has a sprite
+      ///
+      virtual bool hasSprite() const = 0;
       ///
       /// \fn virtual size_t getBackgroundId() const = 0
       /// \brief Get the id of the background sprite
@@ -61,7 +63,6 @@ namespace arcade
       /// \brief Get the text value
       ///
       virtual std::string const &getText() const = 0;
-
       ///
       /// \fn virtual void setClicked() = 0
       /// \brief Way of the lib to tell a component it was clicked
