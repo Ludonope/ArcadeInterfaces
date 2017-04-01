@@ -1,11 +1,11 @@
-s//
+//
 // ISprite.hpp for arcade in /home/brout_m/rendu/cpp/ArcadeInterfaces
 //
 // Made by brout_m
 // Login   <marc.brout@epitech.eu>
 //
 // Started on  Fri Mar 31 13:43:50 2017 brout_m
-// Last update Sat Apr  1 16:04:40 2017 brout_m
+// Last update Sat Apr  1 19:59:58 2017 Ludovic Petrenko
 //
 
 #ifndef ISPRITE_HPP_
