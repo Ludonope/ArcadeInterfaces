@@ -14,6 +14,7 @@
 #include "ILevel.hpp"
 #include "IGUI.hpp"
 #include "ISprite.hpp"
+#include "Sound.hpp"
 
 namespace arcade
 {
