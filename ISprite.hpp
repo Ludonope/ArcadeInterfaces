@@ -1,11 +1,11 @@
-//
+s//
 // ISprite.hpp for arcade in /home/brout_m/rendu/cpp/ArcadeInterfaces
 //
 // Made by brout_m
 // Login   <marc.brout@epitech.eu>
 //
 // Started on  Fri Mar 31 13:43:50 2017 brout_m
-// Last update Fri Mar 31 14:10:43 2017 brout_m
+// Last update Sat Apr  1 16:04:40 2017 brout_m
 //
 
 #ifndef ISPRITE_HPP_
@@ -44,7 +44,7 @@ namespace arcade
     /// \fn virtual std::string const& getAscii() const = 0
     /// \brief returns the ascii character at position pos from the animation sequence
     ///
-    virtual unsigned char getAscii(size_t pos) const = 0;
+    virtual char getAscii(size_t pos) const = 0;
   };
 }
 
