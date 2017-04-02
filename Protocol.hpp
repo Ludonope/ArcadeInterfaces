@@ -37,7 +37,7 @@ namespace		arcade
       OTHER		= 7		// ANYTHING THAT WILL BE IGNORED BY THE KOALINETTE
     };
 
-#if defined(__linux__)
+#if defined(__linux__) || defined(__APPLE__)
   /// The format is width, height, and width * height * sizeof(TileType) quantity of TileType
   struct		GetMap
   {
@@ -62,4 +62,3 @@ namespace		arcade
 }
 
 #endif	//		__ARCADE_PROTOCOL_HPP__
-
