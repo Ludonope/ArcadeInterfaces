@@ -28,16 +28,6 @@ namespace arcade
     virtual ~ITile(){};
 
 	///
-	/// \fn virtual TileType getType() const = 0
-	/// \brief Get the type of the tile (mostly used for moulinette)
-	///
-    virtual TileType getType() const = 0;
-	///
-	/// \fn virtual TileTypeEvolution getTypeEv() const = 0
-	/// \brief Get the TypeEv of the tile
-	///
-    virtual TileTypeEvolution getTypeEv() const = 0;
-	///
 	/// \fn virtual Color getColor() const = 0
 	/// \brief Get the color of the tile
 	///
