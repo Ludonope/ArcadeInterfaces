@@ -99,10 +99,10 @@ namespace arcade
 
     // GUI
     ///
-    /// \fn virtual IGUI const &getGUI() const = 0
+    /// \fn virtual IGUI &getGUI() = 0
     /// \brief Get the current version of the GUI to display
     ///
-    virtual IGUI &getGUI() const = 0;
+    virtual IGUI &getGUI() = 0;
   };
 }
 
