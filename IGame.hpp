@@ -86,10 +86,10 @@ namespace arcade
     virtual std::vector<std::pair<std::string, SoundType>> getSoundsToLoad() const = 0;
 
     ///
-    /// \fn     virtual Sound const &getSoundsToPlay() = 0
+    /// \fn     virtual std::vector<Sound> const &getSoundsToPlay() = 0
     /// \brief Get the sounds to play
     ///
-    virtual Sound const			&getSoundsToPlay() = 0;
+    virtual std::vector<Sound> const			&getSoundsToPlay() = 0;
 
     // Map
     ///
