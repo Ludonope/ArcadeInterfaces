@@ -59,6 +59,11 @@ namespace arcade
       ///
       virtual Color getBackgroundColor() const = 0;
       ///
+      /// \fn virtual Color getBackgroundColor() const = 0
+      /// \brief Get the color of the background
+      ///
+      virtual Color getTextColor() const = 0;
+      ///
       /// \fn virtual std::string const &getText() const = 0
       /// \brief Get the text value
       ///
