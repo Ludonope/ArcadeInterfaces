@@ -14,6 +14,7 @@
 #include "ILevel.hpp"
 #include "IGUI.hpp"
 #include "ISprite.hpp"
+#include "Sound.hpp"
 
 namespace arcade
 {
@@ -82,7 +83,8 @@ namespace arcade
     /// \fn virtual std::vector<std::string> getSoundsToLoad() const = 0
     /// \brief get the list of sound files to load for this game
     ///
-    virtual std::vector<std::string>	getSoundsToLoad() const = 0;
+    virtual std::vector<std::pair<std::string, SoundType>> getSoundsToLoad() const = 0;
+
     ///
     /// \fn     virtual Sound const &getSoundsToPlay() = 0
     /// \brief Get the sounds to play
@@ -98,10 +100,10 @@ namespace arcade
 
     // GUI
     ///
-    /// \fn virtual IGUI const &getGUI() const = 0
+    /// \fn virtual IGUI &getGUI() = 0
     /// \brief Get the current version of the GUI to display
     ///
-    virtual IGUI const &getGUI() const = 0;
+    virtual IGUI &getGUI() = 0;
   };
 }
 

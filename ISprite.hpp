@@ -5,7 +5,7 @@
 // Login   <marc.brout@epitech.eu>
 //
 // Started on  Fri Mar 31 13:43:50 2017 brout_m
-// Last update Fri Mar 31 14:10:43 2017 brout_m
+// Last update Sat Apr  1 19:59:58 2017 Ludovic Petrenko
 //
 
 #ifndef ISPRITE_HPP_
@@ -44,7 +44,7 @@ namespace arcade
     /// \fn virtual std::string const& getAscii() const = 0
     /// \brief returns the ascii character at position pos from the animation sequence
     ///
-    virtual unsigned char getAscii(size_t pos) const = 0;
+    virtual char getAscii(size_t pos) const = 0;
   };
 }
 
