@@ -11,7 +11,6 @@
 #include "NetworkPacket.hpp"
 #include "IStat.hpp"
 #include "IMap.hpp"
-#include "ILevel.hpp"
 #include "IGUI.hpp"
 #include "ISprite.hpp"
 #include "Sound.hpp"
