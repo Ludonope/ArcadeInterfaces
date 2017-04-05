@@ -86,7 +86,7 @@ namespace arcade
     virtual std::vector<std::pair<std::string, SoundType>> getSoundsToLoad() const = 0;
 
     ///
-    /// \fn     virtual std::vector<Sound> const &getSoundsToPlay() = 0
+    /// \fn     virtual std::vector<Sound> getSoundsToPlay() = 0
     /// \brief Get the sounds to play
     ///  You should return by std::move to not copy your vector and to clear it at the same time
     ///
