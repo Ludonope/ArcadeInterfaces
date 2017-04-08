@@ -40,9 +40,9 @@ namespace arcade
   ///
   struct NetworkPacket
   {
-    NetworkPacketHeader					header;
-    uint32_t						len;
-    uint8_t						*data;
+    NetworkPacketHeader	header;
+    uint32_t		len;
+    uint8_t		*data;
   };
 }
 
