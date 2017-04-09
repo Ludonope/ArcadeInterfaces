@@ -11,6 +11,8 @@ namespace arcade
       NO_GAME		= 0x0,
       SNAKE,
       CENTIPEDE,
+      SOLAR_FOX,
+      PACMAN,
       PONG
     };
 

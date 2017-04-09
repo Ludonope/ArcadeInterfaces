@@ -61,7 +61,13 @@ namespace arcade
     /// \fn virtual std::vector<NetworkPacket> &&getNetworkToSend() = 0
     /// \brief Get the network packet to send from the game to the server
     ///
+
     virtual std::vector<NetworkPacket> getNetworkToSend() = 0;
+    ///
+    /// \fn virtual bool hasNetwork() const = 0
+    /// \brief Does this game support network ?
+    ///
+    virtual bool hasNetwork() const = 0;
 
     // Process
     ///
