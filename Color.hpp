@@ -30,6 +30,16 @@ namespace arcade
 		///
 		Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a = 255);
 
+		bool operator==(Color const& col)
+		{
+		  return full == col.full;
+		}
+
+		bool operator!=(Color const& col)
+		{
+		  return full != col.full;
+		}
+
 		///
 		/// \fn Color(Color const &c)
 		/// \brief Constructor to copy a Color
