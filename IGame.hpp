@@ -17,9 +17,6 @@
 
 namespace arcade
 {
-  /// Define a type for the tick
-  typedef float tick_t;
-
   ///
   /// \class IGame
   /// \brief Interface of a game for the Core program
@@ -46,10 +43,6 @@ namespace arcade
     /// \brief Ask the current game state to the game
     ///
     virtual GameState getGameState() const = 0;
-    ///
-    /// \fn virtual tick_t getTickRate() const = 0
-    /// \brief Get the current game tickRate
-    virtual tick_t getTickRate() const = 0;
 
     // Events
     ///
@@ -68,7 +61,8 @@ namespace arcade
     /// \fn virtual std::vector<NetworkPacket> &&getNetworkToSend() = 0
     /// \brief Get the network packet to send from the game to the server
     ///
-    virtual std::vector<NetworkPacket> &&getNetworkToSend() = 0;
+
+    virtual std::vector<NetworkPacket> getNetworkToSend() = 0;
     ///
     /// \fn virtual bool hasNetwork() const = 0
     /// \brief Does this game support network ?
