@@ -28,4 +28,34 @@ namespace arcade
 	Color::Color(Color const &c) :
 		full(c.full)
 	{}
+
+	bool Color::operator==(Color const &c)
+	{
+	  return full == c.full;
+	}
+
+	bool Color::operator!=(Color const &c)
+	{
+	  return full != c.full;
+	}
+
+	bool Color::operator<(Color const &c)
+	{
+	  return full < c.full;
+	}
+
+	bool Color::operator<=(Color const &c)
+	{
+	  return full <= c.full;
+	}
+
+	bool Color::operator>=(Color const &c)
+	{
+	  return full >= c.full;
+	}
+
+	bool Color::operator>(Color const &c)
+	{
+	  return full > c.full;
+	}
 }
